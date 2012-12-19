@@ -17,6 +17,8 @@
  */
 package kr.co.cloudine.template.standalone.domain;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -41,10 +43,16 @@ public class User implements Serializable {
 
     private Integer id;
 
+    @NotNull
+   	@Max(20)
     private String username;
 
+    @NotNull
+   	@Max(20)
     private String password;
 
+    @NotNull
+   	@Max(20)
     private String name;
 
     public Integer getId() {

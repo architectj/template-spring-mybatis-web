@@ -28,7 +28,8 @@
         <javax.jstl.version>1.2</javax.jstl.version>
         <jsp.api.version>2.1</jsp.api.version>
         <servlet.api.version>1.0</servlet.api.version>
-        <tablibs.version>1.1.2</tablibs.version>
+        <javax.validation.version>1.0.0.GA</javax.validation.version>
+        <hibernate.validator.version>4.1.0.Final</hibernate.validator.version>
         <junit.version>4.10</junit.version>
         <easymock.version>3.1</easymock.version>
     </properties>
@@ -202,6 +203,20 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${javax.jstl.version}</version>
+        </dependency>
+
+        <!-- ========================= BEAN VALIDATION ========================= -->
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${javax.validation.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate.validator.version}</version>
         </dependency>
 
         <!-- ========================= TEST ========================= -->
